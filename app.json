@@ -1,6 +1,11 @@
 {
     "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/reading/reading",
+        "pages/reading/essay/essay",
+        "pages/reading/serial/serial",
+        "pages/reading/question/question",
+        "pages/music/music"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -18,11 +23,16 @@
             "text": "首页",
             "iconPath": "image/home.png",
             "selectedIconPath": "image/home_active.png"
+        }, {
+            "pagePath": "pages/reading/reading",
+            "text": "阅读",
+            "iconPath": "image/reading.png",
+            "selectedIconPath": "image/reading_active.png"
         },{
-            "pagePath": "pages/index/index",
-            "text": "首页",
-            "iconPath": "image/home.png",
-            "selectedIconPath": "image/home_active.png"
+            "pagePath": "pages/music/music",
+            "text": "音乐",
+            "iconPath": "image/music.png",
+            "selectedIconPath": "image/music_active.png"
         }]
     }
 }

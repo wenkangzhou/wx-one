@@ -42,7 +42,8 @@ Page({
     handleChange: function(e) {
         let current = e.detail.current
         let volsLength = this.data.vols.length
-
+        //TODO:如需最后一项跳转，需要在模板添加一个空白项<swiper-item></swiper-item>
+        //TODO:现在强制false，关闭口子
         if (current === volsLength && false)  {
             this.setData({
                 current: volsLength

@@ -27,12 +27,24 @@ const wxRequest = (params, url) => {
 // Index
 const getVolById = (params) => wxRequest(params, host + '/api/hp/detail/' + params.query.id)
 const getVolIdList = (params) => wxRequest(params, host + '/api/hp/idlist/0')
-const getVolsByMonth = (params) => wxRequest(params, host + '/api/hp/bymonth/' + params.query.month)
-const getVolDetailById = (params) => wxRequest(params, host + '/api/hp/detail/' + params.query.id)
+// Reading
+const getCarousel = (params) => wxRequest(params, host + '/api/reading/carousel')
+const getLastArticles = (params) => wxRequest(params, host + '/api/reading/index')
+const getEssayById = (params) => wxRequest(params, host + '/api/essay/' + params.query.id)
+const getSerialById = (params) => wxRequest(params, host + '/api/serialcontent/' + params.query.id)
+const getQuestionById = (params) => wxRequest(params, host + '/api/question/' + params.query.id)
+// Music
+const getMusicIdList = (params) => wxRequest(params, host + '/api/music/idlist/0')
+const getMusicDetailById = (params) => wxRequest(params, host + '/api/music/detail/' + params.query.id)
 
 module.exports = {
     getVolById,
     getVolIdList,
-    getVolsByMonth,
-    getVolDetailById
+    getCarousel,
+    getLastArticles,
+    getEssayById,
+    getSerialById,
+    getQuestionById,
+    getMusicIdList,
+    getMusicDetailById
 }

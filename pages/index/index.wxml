@@ -6,6 +6,5 @@
                 <template is="vol-item" data="{{item: item}}"/>
             </swiper-item>
         </block>
-        <swiper-item></swiper-item><!--用于最后一项跳入历史记录-->
     </swiper>
 </view>
